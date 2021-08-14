@@ -1,0 +1,13 @@
+.landingpagemain{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+.landinginfo{
+    text-align: left;
+}
+.landingcontact{
+    text-align: left;
+}
