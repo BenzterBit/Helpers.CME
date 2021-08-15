@@ -1,7 +1,7 @@
 import React from 'react'
 import './Header.css'
 import {Link} from 'react-router-dom'
-import ShoppingBasketIcon from '@material-ui/icons/ShoppingBasket';
+import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 
 function Header() {
     return (
@@ -21,7 +21,7 @@ function Header() {
                 </Link>
                 <Link to='/mycart' style={{ textDecoration: 'none', color:"black"}}>
                 <div className='header_optionBasket'>
-                       <ShoppingBasketIcon /> 
+                       <ShoppingCartIcon /> 
                        <p>Cart</p>
                 </div>
                 </Link>  

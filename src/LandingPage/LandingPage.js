@@ -1,6 +1,8 @@
 import React from 'react'
 import './LandingPage.css'
 import {BrowserRouter as Router,Switch,Route} from "react-router-dom"
+import { CenterFocusStrong } from '@material-ui/icons'
+import {Link} from 'react-router-dom'
 
 function LandingPage() {
     return (
@@ -31,16 +33,51 @@ Nulla consectetur in neque eu dignissim. Suspendisse pharetra lacinia odio non p
 
 Etiam mollis lectus ac lobortis dignissim. Integer convallis porta purus, non mattis quam laoreet in. Etiam euismod ac nibh vel hendrerit. Donec quis tortor tortor. Pellentesque vel aliquam nunc. Aliquam dapibus tortor elit, et molestie justo malesuada vel. Vestibulum faucibus sed lectus nec placerat. Donec vehicula facilisis lorem, et efficitur diam pharetra interdum. Maecenas accumsan erat eget sapien molestie rhoncus.
             </div>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>   
-            <div className="landingcontact">
-                <h1>Contact</h1>
-                <h3>537d, cme, pune</h3>
-                <h3>8806617230</h3>
+
+            <div style={{textAlign:'center'}}>
+                <h3 class="headingtext">
+                    Common Services we offer!!!</h3>
+                <div class="servicesdiv border-end">
+                    <big>
+                        <img src="https://i.imgur.com/W17cHXS.png" alt="clothwash" /></big>
+                        <br/><small>Cloth Wash</small>
+                </div>
+                <div class="servicesdiv border-end">
+                    <big>
+                        <img src="https://i.imgur.com/0R76iOV.png" alt="Cook" /></big><br/><small>Cook</small>
+                </div>
+                <div class="servicesdiv border-end">
+                    <big>
+                        <img src="https://i.imgur.com/J1zfDqq.png" alt="Housecleaner" style={{width:"129px", height:"129px"}} /></big><br/>
+                        <small>House Cleaning</small>
+                </div>
+                <div class="servicesdiv">
+                    <big>
+                        <img src="https://i.imgur.com/jnz73u2.png" alt="Washingplate" style={{width:"129px", height:"129px"}} /></big><br/>
+                        <small>Washing Dishes</small>
+                </div>
             </div>
-        </div>
+            <div class="container-fluid footer" style={{background:"#323232" ,color:"white" , margin:"0"}}>
+                <div class="row ">
+                    <div class="col-6 border-end">
+                    <h3>Helpers.CME</h3>
+                    <br/>
+                    An app to bring all types of helpers in the CME to one platform, to ease in hire and provide more jobs.
+                    </div>
+                    <div class="col" style={{display:"flex", flexDirection:"column"}}>
+                    <h3>About Helpers.CME</h3>
+                    <br></br>
+                    <Link to="/contact" style={{ textDecoration: 'none', color:"white"}}>
+                        Contact
+                    </Link>
+                    <Link to="/aboutus" style={{ textDecoration: 'none', color:"white"}}>
+                        About us
+                    </Link>
+                    </div>
+                </div>
+            </div>
+            </div>  
+            
         
     )
 }
