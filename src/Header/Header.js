@@ -6,7 +6,7 @@ import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 function Header() {
     return (
         
-            <div className="header">
+                <div className='headerbar'>
                 <Link to="/">
                 <img alt='helpers.cme' className='header_logo' src="https://i.imgur.com/tK7xEsk.png"/>
                 </Link>
@@ -24,8 +24,10 @@ function Header() {
                        <ShoppingCartIcon /> 
                        <p>Cart</p>
                 </div>
-                </Link>  
-            </div>
+                </Link> 
+                </div>
+        
+            
     )
 }
 
