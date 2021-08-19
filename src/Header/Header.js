@@ -5,27 +5,29 @@ import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 
 function Header() {
     return (
-        
-            <div className="header">
-                <Link to="/">
-                <img alt='helpers.cme' className='header_logo' src="https://i.imgur.com/tK7xEsk.png"/>
+            <div className='container-fluid' id='navbar'>
+                <div className="row header" >
+                <Link to="/" className='nopad'>
+                <img alt='helpers.cme' className=' col border-end header_logo ' src="https://i.imgur.com/tK7xEsk.png"/>
                 </Link>
-                <Link to='/menhelperlist' style={{ textDecoration: 'none', color:"black"}}>
+                <Link to='/menhelperlist' className='col border-end tohover' style={{ textDecoration: 'none', color:"black"}}>
                 Men
                 </Link>
-                <Link to='/womenhelperlist' style={{ textDecoration: 'none', color:"black"}}>
+                <Link to='/womenhelperlist' className='col border-end tohover ' style={{ textDecoration: 'none', color:"black"}}>
                 Women
                 </Link>
-                <Link to='/login' style={{ textDecoration: 'none', color:"black"}}>
+                <Link to='/login' className='col border-end tohover' style={{ textDecoration: 'none', color:"black"}}>
                 Login
                 </Link>
-                <Link to='/mycart' style={{ textDecoration: 'none', color:"black"}}>
+                <Link to='/mycart'  className='col border-end tohover' style={{ textDecoration: 'none', color:"black"}}>
                 <div className='header_optionBasket'>
                        <ShoppingCartIcon /> 
                        <p>Cart</p>
                 </div>
                 </Link>  
             </div>
+        </div>
+            
     )
 }
 

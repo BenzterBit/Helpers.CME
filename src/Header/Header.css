@@ -1,21 +1,42 @@
+.nopad{
+    padding: 0px;
+}
+
+#navbar>.row>*{
+    width: fit-content;
+    height: 80px;
+    justify-content: center;
+}
 .header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    text-align: center;
     background-color: lightpink;
     position:sticky;
     top: 0;
     z-index: 100;
-    width: 100%;
+    /* width: 100%; */
+    height: fit-content;
+}
+
+.tohover{
+    padding-top: 20px;
+}
+.tohover:hover {
+    
+    border-bottom: 5px solid tomato;
 }
 
 .header_logo{
     width: 200px;
     height: 80px;
     object-fit: scale-down;
-    margin: 0 20px;
+    padding: 0px;
+    margin: 0px;
 }
 .header_optionBasket{
     display: flex;
-    align-items: center;
+    justify-content: center;
+    
 }

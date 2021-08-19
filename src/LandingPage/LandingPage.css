@@ -21,9 +21,21 @@
     font-family: 'proxima-nova', sans-serif;
     color: #333;
 }
+
+.startservicediv{
+    margin-left: 100px;
+}
+.homewhydiv >big{
+    margin:15px 0;
+}
 .servicesdiv{
     float: left;
     text-align: center;
     width: 22%;
     padding: 1%;
+}
+
+#whyus > .row{
+    height: none;
+
 }

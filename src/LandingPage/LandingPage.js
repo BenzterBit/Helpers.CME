@@ -1,78 +1,158 @@
 import React from 'react'
 import './LandingPage.css'
 import {BrowserRouter as Router,Switch,Route} from "react-router-dom"
-import { CenterFocusStrong } from '@material-ui/icons'
 import {Link} from 'react-router-dom'
 
 function LandingPage() {
     return (
         
         <div className="landingpagemain">
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <div className="landinginfo">
-            <h1>About</h1> 
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-            Lorem Ipsum has been the industry's standard dummy text ever since
-            the 1500s, when an unknown printer took a galley of type and 
-            scrambled it to make a type specimen book. It has survived not 
-            only five centuries, but also the leap into electronic typesetting, 
-            remaining essentially unchanged. It was popularised in the 1960s
-            with the release of Letraset sheets containing Lorem Ipsum passages,
-            more recently with desktop publishing software like Aldus PageMaker
-            including versions of Lorem Ipsum</p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempus sem in sem consequat semper. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam non lacus vitae urna vestibulum commodo in vel mi. Maecenas sodales sem ut sem molestie, sed suscipit lorem iaculis. Nulla convallis semper tincidunt. Maecenas placerat, orci non pellentesque bibendum, ipsum leo pellentesque justo, sed aliquam orci justo id tellus. Nullam facilisis tellus non nisi condimentum dapibus. Donec efficitur sagittis eros, eu fringilla ligula lobortis ut. Aliquam erat volutpat. Vestibulum et tristique arcu, non iaculis dolor. Sed sodales augue quis nulla tincidunt, ut vulputate turpis eleifend. Nulla finibus viverra dictum. Nulla euismod est ex, auctor rhoncus ipsum condimentum in. Proin tempus, erat et ornare dictum, justo erat porta mi, a ullamcorper leo lacus eu tortor.
+            
 
-Ut lorem neque, molestie auctor scelerisque eu, euismod et leo. Proin mattis pharetra nibh in mollis. Nullam varius libero non neque sodales aliquet. Cras in mollis sem, vulputate laoreet nunc. Maecenas sed elementum nibh. Curabitur a feugiat nibh, at tempor sapien. Ut suscipit at nisl at ullamcorper. Quisque volutpat felis vitae velit eleifend rhoncus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce viverra, arcu porttitor posuere commodo, dolor sem maximus tortor, quis ornare mauris lectus at quam. Etiam porta fermentum mi. Fusce eget malesuada neque, in dictum mauris.
+                <br/>
+                <br/>
+                <br/>
+                <div style={{textAlign:'center'}} id='howitwork' className='container-fluid'>
+                    <h3 className="headingtext">
+                        How does it work?</h3>
+                        <br/>
+                    <div className='row'>
+                    <div className="howitworkdiv col">
+                        <i>
+                            <img src="https://i.imgur.com/OBhFhpB.png" style={{width:'70px'}} alt="Step 1 - Search" />
+                        </i><br/><big>Search</big>
+                        <p>
+                        <br/>Navigate through the Men/Women pages <br/>and pick a Maid you want to hire<br/> based on your requirments</p>
+                    </div>
+                    <div className="howitworkdiv col">
+                        <i>
+                            <img src="https://i.imgur.com/daTQkki.png" style={{width:'70px'}} alt="Step 2 - Add services" />
+                        </i><br/><big>Add Services</big>
+                        <p>
+                        <br/> View the complete profile of the Helper<br/> and add all the serives you require.
+                        </p>
+                    </div>
+                    <div className="howitworkdiv col">
+                        <i>
+                            <img src="https://i.imgur.com/UsvkK6s.png" style={{width:'70px'}} alt="Step 3 - Sit back and relax" />
+                        </i><br/><big>Meet, Select & Relax</big>
+                        <p>
+                        <br/>   Talk to the maid on the phone or meet her personally. 
+                            <br/>Confirm the maid and enjoy the postpaid Helper Service.
+                        </p>
+                    </div>
 
-Nullam felis orci, cursus et risus eget, blandit consectetur turpis. Nunc sit amet fringilla sem. Etiam eu lobortis purus. Etiam arcu velit, pharetra ut ornare mattis, pulvinar vitae nulla. Nam pretium lacinia sollicitudin. Donec lobortis malesuada lectus. Sed finibus mauris felis, ut finibus diam feugiat vel.
+                    </div>
+                    
+                </div>
+            
 
-Nulla consectetur in neque eu dignissim. Suspendisse pharetra lacinia odio non porta. Praesent faucibus libero eu lectus egestas finibus. Aenean venenatis augue enim, tristique bibendum sem tristique nec. Curabitur pharetra eros at ligula pretium porttitor. Vestibulum non aliquet ex. Cras turpis tortor, facilisis nec egestas et, vestibulum non diam. Nunc nec leo sit amet augue varius vulputate sed eu tellus. Duis tempus, velit et egestas rhoncus, odio eros vehicula purus, eget pulvinar felis libero sit amet metus. In ornare nisl et purus ullamcorper condimentum. Fusce rhoncus lectus eget metus elementum, et auctor neque aliquam.
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            
 
-Etiam mollis lectus ac lobortis dignissim. Integer convallis porta purus, non mattis quam laoreet in. Etiam euismod ac nibh vel hendrerit. Donec quis tortor tortor. Pellentesque vel aliquam nunc. Aliquam dapibus tortor elit, et molestie justo malesuada vel. Vestibulum faucibus sed lectus nec placerat. Donec vehicula facilisis lorem, et efficitur diam pharetra interdum. Maecenas accumsan erat eget sapien molestie rhoncus.
-            </div>
 
-            <div style={{textAlign:'center'}}>
-                <h3 class="headingtext">
+            
+            <div style={{textAlign:'center', justifyContent:'center'}} id='whatweoffer'>
+                <h3 className="headingtext">
                     Common Services we offer!!!</h3>
-                <div class="servicesdiv border-end">
+                    <br/>
+                <div className=" startservicediv servicesdiv border-end">
                     <big>
                         <img src="https://i.imgur.com/W17cHXS.png" alt="clothwash" /></big>
-                        <br/><small>Cloth Wash</small>
+                        <br/><small>Washing Clothes</small>
                 </div>
-                <div class="servicesdiv border-end">
+                <div className="servicesdiv border-end">
                     <big>
                         <img src="https://i.imgur.com/0R76iOV.png" alt="Cook" /></big><br/><small>Cook</small>
                 </div>
-                <div class="servicesdiv border-end">
+                <div className="servicesdiv border-end">
                     <big>
                         <img src="https://i.imgur.com/J1zfDqq.png" alt="Housecleaner" style={{width:"129px", height:"129px"}} /></big><br/>
                         <small>House Cleaning</small>
                 </div>
-                <div class="servicesdiv">
+                <div className="servicesdiv">
                     <big>
                         <img src="https://i.imgur.com/jnz73u2.png" alt="Washingplate" style={{width:"129px", height:"129px"}} /></big><br/>
                         <small>Washing Dishes</small>
                 </div>
+                
             </div>
-            <div class="container-fluid footer" style={{background:"#323232" ,color:"white" , margin:"0"}}>
-                <div class="row ">
-                    <div class="col-6 border-end">
-                    <h3>Helpers.CME</h3>
-                    <br/>
-                    An app to bring all types of helpers in the CME to one platform, to ease in hire and provide more jobs.
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+
+                
+                <div className="container-fluid" id='whyus' style={{textAlign:'center'}}>
+                    <h3 className="headingtext">
+                        Why Use Helpers.CME?</h3>
+                        <br/>
+                    <div className='row'>
+                        <div className="homewhydiv col border-end" style={{display:'flex', flexDirection:'column', justifyContent:'center'}}>
+                            <i>
+                                <img src="https://i.imgur.com/EnyEcmQ.png" alt="Quick & Easy" />
+                            </i><big>Quick & Easy</big>
+                            <p>
+                                No need to wait for maid <br/>to come for interview. <br/>Search - View profile - Select
+                            </p>
+                        </div>
+                        <div className="homewhydiv col border-bottom" style={{display:'flex', flexDirection:'column', justifyContent:'center'}}>
+                            <i>
+                                <img src="https://i.imgur.com/R5AcJEI.png" alt="Safe & Reliable" />
+                            </i><big>Safe & Reliable </big>
+                            <p>
+                                Your safety is our first priority.<br/> CME does a thorough background check of every maid 
+                            </p>
+                        </div>
+
                     </div>
-                    <div class="col" style={{display:"flex", flexDirection:"column"}}>
-                    <h3>About Helpers.CME</h3>
-                    <br></br>
+                    <div className='row'>
+                        <div className="homewhydiv col border-end border-top" style={{display:'flex', flexDirection:'column', justifyContent:'center'}}>
+                            <i>
+                                <img src="https://i.imgur.com/OhlTERf.png" alt="Multiple Options" />
+                            </i><big>Multiple Options</big>
+                            <p>
+                                Watch as many profiles as you want.<br/> Select only the one you find best
+                            </p>
+                        </div>
+                        <div className="homewhydiv col" style={{display:'flex', flexDirection:'column', justifyContent:'center'}}>
+                            <i>
+                                <img src="https://i.imgur.com/7Xyeiml.png" alt="High Quality" />
+                            </i><big>High Quality</big>
+                            <p>
+                                Only skilled maids are registered with us.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+                
+            
+            <div className="container-fluid footer" style={{background:"#323232" ,color:"white" , margin:"0"}}>
+                <div className="row " style={{alignItems:'center', paddingLeft:'10px'}}>
+                    <div className="col border-end" >
+                    <h3 style={{color:'blue'}}>Helpers.CME</h3>
+                    
+                    An app to bring all types of helpers in the CME to one platform,<br/> to ease in hire and provide more jobs.
+                    </div>
+                    <div className="col" >
+                    <h3 style={{color:'blue'}}>About Helpers.CME</h3>
+                    
+                    <div style={{display:"flex", flexDirection:"column"}} >
                     <Link to="/contact" style={{ textDecoration: 'none', color:"white"}}>
                         Contact
                     </Link>
                     <Link to="/aboutus" style={{ textDecoration: 'none', color:"white"}}>
                         About us
                     </Link>
+                    </div>
+                    
                     </div>
                 </div>
             </div>
