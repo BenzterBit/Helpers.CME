@@ -1,6 +1,6 @@
 
 .signin {
-  background-color: lightpink;
+  background-color: lightskyblue;
   font-family: 'Montserrat', sans-serif;
   color:black;
   font-size: 14px;
@@ -11,9 +11,9 @@
   position: relative;
   height: 560px;
   width: 405px;
-  margin: auto;
+  margin: 70px 37%;
   padding: 60px 60px;
-  background: no-repeat   center center rgb(214, 214, 180);   
+  background: no-repeat center center lightpink;   
   background-size: cover;
   box-shadow: 0px 30px 60px -5px #000;
   
@@ -145,7 +145,7 @@ label {
 }
 
 .signin {
-  background-color: pink;
+  background-color: lightsalmon;
   color: black;
   width: 100%;
   padding: 10px 20px;
