@@ -1,8 +1,23 @@
-import React from 'react'
+import React, {useState} from 'react'
 import './Login.css'
-import {Link} from 'react-router-dom'
+import {Link, useHistory} from 'react-router-dom'
+import { auth } from '../firebase';
 
-function login() {
+function Login() {
+    //state vars
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
+    const history = useHistory();
+
+    const signIn =(e)=>{
+        e.preventDefault();
+        auth.signInWithEmailAndPassword(email,password)
+        .then(auth => {
+            if(auth){
+                history.push('/')
+            }
+        }).catch(err => alert(err))
+    }
     return (
         <div>
             <div className="login">
@@ -10,16 +25,18 @@ function login() {
                     <div className='form'>
                         <br/>
                         <br/>
-                        <input type="email" className="text" name="email" required/>
+                        <input type="email" className="text" name="email" 
+                        value={email} onChange={e=>setEmail(e.target.value)} required/>
                         <span >email</span>
                         <br/>            
                         <br/>
-                        <input type="password" className="text" name="password" required />
+                        <input type="password" className="text" name="password" 
+                        value={password} onChange={e=>setPassword(e.target.value)} required />
                         <span >password</span>
                         <br/>
-                        <input type="checkbox" id="checkbox-1-1" className="custom-checkbox" />
-                        <label for="checkbox-1-1">Keep me Signed in</label>
-                        <button className="signin">
+                        {/* <input type="checkbox" id="checkbox-1-1" className="custom-checkbox" />
+                        <label for="checkbox-1-1">Keep me Signed in</label> */}
+                        <button className="signin" type='submit' onClick={signIn}>
                         Sign In
                         </button>
                         <hr/>
@@ -36,4 +53,4 @@ function login() {
     )
 }
 
-export default login
+export default Login;
