@@ -2,8 +2,18 @@ import React from 'react'
 import './Header.css'
 import {Link} from 'react-router-dom'
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
+import {useStateValue} from '../StateProvider/StateProvider';
+import {auth} from '../firebase';
 
 function Header() {
+    const [{basket,user},] = useStateValue();
+
+    const handleAuth = ()=>{
+        if(user){
+            auth.signOut();
+        }
+    }
+
     return (
             <div className='container-fluid' id='navbar'>
                 <div className="row header" >
@@ -17,12 +27,12 @@ function Header() {
                 Women
                 </Link>
                 <Link to='/login' className='col border-end tohover' style={{ textDecoration: 'none', color:"black"}}>
-                Login
+                {user?'My Profile':'Sign in'}
                 </Link>
                 <Link to='/mycart'  className='col border-end tohover' style={{ textDecoration: 'none', color:"black"}}>
                 <div className='header_optionBasket'>
                        <ShoppingCartIcon /> 
-                       <p>Cart</p>
+                       <span>{basket?.length}</span>
                 </div>
                 </Link>  
             </div>
