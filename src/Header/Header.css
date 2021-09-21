@@ -7,7 +7,7 @@
     height: 80px;
     justify-content: center;
 }
-.header{
+#navbar > .header{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -20,10 +20,10 @@
     height: fit-content;
 }
 
-.tohover{
+#rowhead > .tohover{
     padding-top: 20px;
 }
-.tohover:hover {
+#rowhead >.tohover:hover {
     
     border-bottom: 5px solid tomato;
 }
@@ -35,7 +35,7 @@
     padding: 0px;
     margin: 0px;
 }
-.header_optionBasket{
+#rowhead > .header_optionBasket{
     display: flex;
     justify-content: center;
     

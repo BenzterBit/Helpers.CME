@@ -7,19 +7,13 @@
     z-index: 0;
 }
 
-.landinginfo{
-    text-align: left;
-}
-.landingcontact{
-    text-align: left;
-}
-.footer{
+.landingpagemain > .footer{
     background-color: #323232;
     color: white;
     /* width: 100%; */
     padding: 15px 0;
 }
-.headingtext { 
+#whatweoffer , #howitwork , #whyus > .headingtext { 
     font-family: 'proxima-nova', sans-serif;
     color: #333;
 }
